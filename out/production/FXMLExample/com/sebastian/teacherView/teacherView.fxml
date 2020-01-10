@@ -1,0 +1,50 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:controller="com.sebastian.teacherView.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <left>
+        <HBox>
+            <padding>
+                <Insets left="30" top="30" right="30" bottom="30"/>
+            </padding>
+            <ListView fx:id="teacher_list"/>
+        </HBox>
+    </left>
+
+    <center>
+        <GridPane hgap="7" vgap="7">
+            <padding>
+                <Insets left="30" top="30" right="30" bottom="30"/>
+            </padding>
+
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.halignment="RIGHT" text="Teacher ID: "/>
+            <TextField fx:id="teacher_id" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.halignment="RIGHT"
+                       editable="false"/>
+
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.halignment="RIGHT" text="Name: "/>
+            <TextField fx:id="teacher_name" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.halignment="RIGHT"
+                       editable="false"/>
+
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.halignment="RIGHT" text="Surname: "/>
+            <TextField fx:id="teacher_surname" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.halignment="RIGHT"
+                       editable="false"/>
+
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.halignment="RIGHT" text="Email: "/>
+            <TextField fx:id="teacher_email" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.halignment="RIGHT"
+                       editable="false"/>
+        </GridPane>
+    </center>
+
+    <right>
+        <HBox>
+            <padding>
+                <Insets left="30" top="30" right="30" bottom="30"/>
+            </padding>
+            <ListView fx:id="teacherclasses_list"/>
+        </HBox>
+    </right>
+
+</BorderPane>
+
